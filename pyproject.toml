@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loilv_file_search"
+version = "0.0.0"
+authors = [
+    {name = "Le Vu Loi", email = "levuloihust@gmail.com"}
+]
+description = "A tool for searching for matching files"
+
+[project.scripts]
+search_files = "loilv_file_search.search_files:main"
