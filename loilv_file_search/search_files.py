@@ -15,7 +15,7 @@ def scan_files(
     ignore_pattern: Optional[Union[Text, List[Text]]] = None,
     include_pattern: Optional[Union[Text, List[Text]]] = None,
     include_over_ignore: bool = True,
-) -> list[str]:
+) -> List[Text]:
     logger.info("Scanning...")
     root_path_dir = os.path.basename(root_path)
     is_ignore = check_for_ignore(
